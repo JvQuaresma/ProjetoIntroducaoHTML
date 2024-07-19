@@ -3,10 +3,14 @@
         <title>Introdução ao HTML</title>
     </head>
     <body>
-        <h1 id="Inicio">Introdução ao HTML</h1>
-        <h3>Índice:</h3>
-        <blockquote>
+        <h1 id="Inicio" style="color:brown">Introdução ao HTML</h1>
+        <small>Por: João Quaresma</small><br>
+        <a href="https://www.linkedin.com/in/jvquaresma/" target="_blank">Linkedin</a><br>
+        <a href="https://github.com/JvQuaresma" target="_blank">Github</a>
+
+        <h3>Índice:</h3>     
         <u>
+        <ul>
             <li>
                 <a href="#Estrutura" title="Clique Aqui e Confira">Estrutura Básica do HTML</a>
             </li>
@@ -22,10 +26,15 @@
             <li>
                 <a href="#Listas" title="Clique Aqui e Confira">Listas Ordenadas e Não Ordenadas</a>
             </li>
-        </u>
-        </blockquote>
+            <li>
+                <a href="#Links" title="Clique Aqui e Confira">Links</a>
+            </li>
+        </ul>
+        </u>      
         <br>
-        <h2 id="Estrutura"><u>Estrutura Básica do HTML:</u></h2>
+
+        <h2 id="Estrutura" style="color: darkblue;"><u>Estrutura Básica do HTML:</u></h2>
+        <a href="#Inicio"><small>Início</small></a> 
             <p>
                 O documento HTML sempre inicia com o que chamamos de estrutura básica.<mark> Esta estrutura é quase que imutável</mark>. 
                 Sempre será dessa forma e você sempre começará seu HTML por esse código.
@@ -34,9 +43,11 @@
             </p>
         <img width="600" src="IMGs/EstruturaBasicaHTML.jpg">
             <p>
-                É possível compreender o documento em HTML de uma maneira muito simples, através de uma divisão de blocos das tags essenciais, conforme a a seguinte estrutura:
+                É possível compreender o documento em HTML de uma maneira muito simples, 
+                através de uma divisão de blocos das tags essenciais, conforme a a seguinte estrutura:
             </p>  
-                <blockquote>     
+                <blockquote> 
+                    <ul>    
                     <li>
                         Definição do documento (DOCTYPE)
                     </li>
@@ -46,35 +57,46 @@
                     <li>
                         Corpo (body)
                     </li>
+                    </ul>
                 </blockquote>  
             <h3>DOCTYPE - Definindo o documento</h3> 
                 <p>
                     Uma coisa importante: <strong>SEMPRE</strong> deve existir o doctype, que é este código !DOCTYPE html.
                     <br>
-                    O doctype não é uma tag HTML, mas uma instrução para o navegador e outros programas que podem ler seu site, que o código encontrado ali é um código HTML.
+                    O doctype não é uma tag HTML, mas uma instrução para o navegador e outros programas que podem ler seu site, 
+                    que o código encontrado ali é um código HTML.
                     <br>
-                    Assim eles sabem o que fazer para mostrar seu site da melhor forma possível. <mark>o doctype é OBRIGATÓRIO e deve ser sempre a PRIMEIRA LINHA do seu documento.</mark> 
+                    Assim eles sabem o que fazer para mostrar seu site da melhor forma possível. 
+                    <mark>o doctype é OBRIGATÓRIO e deve ser sempre a PRIMEIRA LINHA do seu documento.</mark> 
                 </p>  
             <h3>Head</h3> 
                 <p>
-                    Contém informações que não são transpostas visivelmente para o usuário/leitor do documento. São dados implícitos, de uso e controle do documento: vinculação com outros arquivos, aplicação de lógica de programação de scripts e metadados. 
+                    Contém informações que não são transpostas visivelmente para o usuário/leitor do documento. 
+                    São dados implícitos, de uso e controle do documento: vinculação com outros arquivos, aplicação de lógica de programação de scripts e metadados. 
                     <br>
                     Na prática, todo o conteúdo do cabeçalho fica delimitado entre a abertura e fechamento tag head.
                 </p>
             <h3>Body</h3>
                 <p>
-                    Trata-se do documento em si, ou seja, a informação legível para o usuário/leitor do documento. É todo e qualquer texto que se deseja apresentar, assim como toda e qualquer forma de mídia de saída (imagens, sons, miniaplicativos embutidos, conteúdo multimídia, etc).
+                    Trata-se do documento em si, ou seja, a informação legível para o usuário/leitor do documento. 
+                    É todo e qualquer texto que se deseja apresentar, assim como toda e qualquer forma de mídia de saída 
+                    (imagens, sons, miniaplicativos embutidos, conteúdo multimídia, etc).
                     <br> 
-                    Além disso, toda a apresentação de entrada de dados (formulários) também se aplica neste seção do documento. Na prática, o corpo do documento é delimitado pelo par de tags <i>body</i> e <i>/body</i>.
+                    Além disso, toda a apresentação de entrada de dados (formulários) também se aplica neste seção do documento. 
+                    Na prática, o corpo do documento é delimitado pelo par de tags <i>body</i> e <i>/body</i>.
                     <br><br>
-                    Este é o preceito básico que deve estar muito bem claro para você: onde as marcações se aplicam, e quais são os resultados deste modelo. Por exemplo: se vocês deseja informar conteúdo textual para saída legível ao usuário do seu sistema web, esta marcação deverá obrigatoriamente estar no bloco do corpo da página. Ainda: para definir qual o tipo de codificação da página (uma meta informação do documento), esta deve obrigatoriamente estar marcada no cabeçalho do mesmo documento.
+                    Este é o preceito básico que deve estar muito bem claro para você: onde as marcações se aplicam, e quais são os resultados deste modelo. 
+                    Por exemplo: se vocês deseja informar conteúdo textual para saída legível ao usuário do seu sistema web, esta marcação deverá obrigatoriamente estar no bloco do corpo da página. 
+                    Ainda: para definir qual o tipo de codificação da página (uma meta informação do documento), esta deve obrigatoriamente estar marcada no cabeçalho do mesmo documento.
                     <br><br>
                     Dentro do elemento BODY sua estrutura de página terá os elementos semânticos da construção da sua página, onde serão declarados e identificados cabeçalhos, rodapé, conteúdo principal, etc.
-                </p> 
+                </p><br>
         
-        <h2 id="FalandoSobreTags"><u>Falando Sobre Tags:</u></h2>  
+        <h2 id="FalandoSobreTags" style="color: darkblue;"><u>Falando Sobre Tags:</u></h2>
+        <a href="#Inicio"><small>Início</small></a>   
                 <p>
                     Existem milhares de tags, cada uma com sua função. São exemplos de tags de formatação de texto:
+                    <ul>
                     <li>
                         Tag (i /i) - Deixa o texto em Itálico.
                     </li>
@@ -84,16 +106,103 @@
                     <li>
                         Tag (u /u) - Sublinha o texto.
                     </li>
+                    </ul>
                 </p>
         <img width="600" src="IMGs/FalandoSobreTags.jpg">
         <img width="350" src="IMGs/PaginaFalandoSobreTags.png">
                 <p>
-                    Perceba que é totalmente possível mesclar as tags em um texto, como demonstrado na <strong>linha 12</strong> do exemplo.
+                    Perceba que é totalmente possível mesclar as tags em um texto, como demonstrado na <strong><u>linha 12</u></strong> do exemplo.
                 </p>
+                <p>
+                    Em sua grande maioria, as tags são representadas por <> para iniciar a tag e por <> com uma / dentro para p fechamento da tag, porém,
+                    também existem algumas tags que não possuem uma segunda tag de fechamento, como por exemplo a tag <i><strong>input</strong></i>:
+                    <br>
+                    <img width="200" src="IMGs/TagInput.jpg">
+                </p>
+                <br>
 
-        <h2 id="AtributosDasTags"><u>Atributos das Tags:</u></h2>
-        <h2 id="Textos"><u>Textos:</u></h2>
-        <h2 id="Listas"><u>Listas Ordenadas e Não Ordenadas:</u></h2>
+        <h2 id="AtributosDasTags" style="color: darkblue;"><u>Atributos das Tags:</u></h2>
+        <a href="#Inicio"><small>Início</small></a> 
+                <p>
+                    Os atributos são propriedades que as tags podem ter, existem atributos que são mais globais, "genericos", todas as tags vão ter,
+                    mas também existem atributos que são mais específicos de cada tag. São alguns exemplos de atributos:
+                </p>
+                <li>
+                    Id
+                </li>
+                <p>
+                    O id representa um <strong>identificador</strong> para aquela tag especifica onde ele foi implementado.
+                    Assim podendo ser referenciado em alguma outra função de forma mais eficaz.
+                </p>
+                <img src="IMGs/AtributoId.jpg">
+                <li>
+                    Style
+                </li>
+                <p>
+                    Consegue implementar um estilo css na tag.
+                </p>
+                <img src="IMGs/AtributoStyle.jpg">
+                <li>
+                    Img src
+                </li>
+                <p>
+                    A tag <i>Img</i> permite que insira uma imagem na pagina, especificando o caminho dela através do atributo <i>src</i>.
+                </p>
+                <img src="IMGs/TagImg.jpg">
+                <p>
+                    O atributo <i>width</i> no exemplo acima, permite manipular a dimensão da imagem.
+                </p><br>
+
+        <h2 id="Textos" style="color: darkblue;"><u>Textos:</u></h2>
+        <a href="#Inicio"><small>Início</small></a> 
+                <p>
+                    Textos, basicamente, são os conteúdos que os usuarios vão ler em sua página. 
+                    Para isso utilizamos algumas tipografias para organizar os textos em HTML:
+                </p>
+                <ul>
+                    <li>H1 - Título</li>
+                    <li>H2 - Sub Título</li>
+                    <li>...H6</li>
+                    <li>P - Parágrafo</li>
+                    <li>MARK - marca o texto selecionado</li>
+                    <li>BR - Quebra de linha</li>
+                    <li>BLOCKQUOTE - Cria uma "citação", um texto destacado.</li>
+                </ul>
+                <img src="IMGs/Textos.jpg">
+                <img width="450" src="IMGs/PaginaTextos.jpg">
+                <br>
+                <p>
+                    Vale a pena dar uma conferida na 
+                    <a href="https://www.w3schools.com/html/html_elements.asp" target="_blank">W3SCHOOLS HTML ELEMENT REFERENCE </a> 
+                    para ter uma referencia maior de tags.
+                </p><br>
+
+        <h2 id="Listas" style="color: darkblue;"><u>Listas Ordenadas e Não Ordenadas:</u></h2>
+        <a href="#Inicio"><small>Início</small></a> 
+            <p>
+                Existem dois tipos basicamente de listas, as <strong>Ordenadas</strong> e as <strong>Não Ordenadas</strong> 
+                que são representadas pelas tags <i><mark>ol</mark></i> e <i><mark>ul</mark></i> respectivamente, seguidas da tag <i><mark>li</mark></i> 
+                que representa cada item da lista.
+            </p>
+            <img src="IMGs/ListasOrdenadasENaoOrdenadas.jpg">
+            <br>
+
+        <h2 id="Links" style="color: darkblue;"><u>Links:</u></h2> 
+        <a href="#Inicio"><small>Início</small></a>  
+            <p>
+                Todo site precisa de links para "Linkar" ou navegar com outras paginas e interagir com conteúdos específicos através de uma conexão,
+                para isso utilizamos a tag <i><mark>a</mark></i> como ancora para referenciar um link ou caminho especifico e o atributo <i><mark>href</mark></i>
+                para especificar o caminho.
+            </p>
+            <p>
+                Por exemplo, no módulo de <a href="#Textos" title="Clique Aqui e Confira">Textos</a> 
+                utilizamos um link para referenciar o site W3Schools da seguinte forma:
+            </p>
+            <img src="IMGs/Links.jpg">
+            <p>
+                O atributo <i><mark>target="_blank"</mark></i> também utilizado na tag IMG serve para atribuir um comportamento para o link, 
+                neste caso, o link será aberto em outra aba no navegador.
+            </p>
 
     </body>
 </html>
